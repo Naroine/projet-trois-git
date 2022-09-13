@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />   
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link href='https://fonts.googleapis.com/css?family=Shrikhand' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/a099e843fc.js" crossorigin="anonymous"></script>
@@ -13,10 +13,20 @@
 </head>
 
 <body>
-    <header>
-        <h1>La note enchantée</h1>
-        <i class=""></i>
+
+    <header id="topbar">
+        <a href="#">
+            <div class="logo">
+                <i class="fa-solid fa-arrow-left"></i>
+                <img src="images/logo/ohmyfood.png" alt="ohmyfood" />
+            </div>
+        </a>
     </header>
+
+    <section class="titre-menu">
+        <h1>La note enchantée</h1>
+        <a href="#"><i class="fa-regular fa-heart"></i></a>
+    </section>
 
 
     <section>
@@ -32,39 +42,39 @@
 
                 <div class="prix">
                     <p>25€</p>
-            </div>
+                </div>
 
-            <div class="btn">
+                <div class="btn">
 
-                <h2 class="selection">Caviar osciètre</h2>
+                    <h2 class="selection">Caviar osciètre</h2>
 
-                <p class="accomp">Sur un blini à la farine de blé noir</p>
+                    <p class="accomp">Sur un blini à la farine de blé noir</p>
 
-                <div class="prix">
-                    <p>35€</p>
-            </div>
+                    <div class="prix">
+                        <p>35€</p>
+                    </div>
 
-            <div class="btn">
+                    <div class="btn">
 
-                <h2 class="selection">Homard et espuma de potiron</h2>
+                        <h2 class="selection">Homard et espuma de potiron</h2>
 
-                <p class="accomp">Mariné aux zestes d'orange</p>
+                        <p class="accomp">Mariné aux zestes d'orange</p>
 
-                <div class="prix">
-                    <p>20€</p>
-            </div>
+                        <div class="prix">
+                            <p>20€</p>
+                        </div>
 
-            <div class="btn">
+                        <div class="btn">
 
-                <h2 class="selection">Foie gras de canard cuit entier</h2>
+                            <h2 class="selection">Foie gras de canard cuit entier</h2>
 
-                <p class="accomp">Confiture de figue et pain toasté</p>
+                            <p class="accomp">Confiture de figue et pain toasté</p>
 
-                <div class="prix">
-                    <p>35€</p>
-            </div>
+                            <div class="prix">
+                                <p>35€</p>
+                            </div>
 
-        </div>
+                        </div>
     </section>
 
     <section>
@@ -80,29 +90,29 @@
 
                 <div class="prix">
                     <p>40€</p>
-            </div>
+                </div>
 
-            <div class="btn">
+                <div class="btn">
 
-                <h2 class="selection">Langoustine poêlée</h2>
+                    <h2 class="selection">Langoustine poêlée</h2>
 
-                <p class="accomp">Purée de patate douce</p>
+                    <p class="accomp">Purée de patate douce</p>
 
-                <div class="prix">
-                    <p>35€</p>
-            </div>
+                    <div class="prix">
+                        <p>35€</p>
+                    </div>
 
-            <div class="btn">
+                    <div class="btn">
 
-                <h2 class="selection">Mijoté de queue de boeuf </h2>
+                        <h2 class="selection">Mijoté de queue de boeuf </h2>
 
-                <p class="accomp">Et riz sauvage aux zestes de citron</p>
+                        <p class="accomp">Et riz sauvage aux zestes de citron</p>
 
-                <div class="prix">
-                    <p>44€</p>
-            </div>
+                        <div class="prix">
+                            <p>44€</p>
+                        </div>
 
-        </div>
+                    </div>
     </section>
 
     <section>
@@ -118,40 +128,68 @@
 
                 <div class="prix">
                     <p>18€</p>
-            </div>
+                </div>
 
-            <div class="btn">
+                <div class="btn">
 
-                <h2 class="selection">Baba au rhum revisité </h2>
+                    <h2 class="selection">Baba au rhum revisité </h2>
 
-                <p class="accomp">Avec son coulis de citron</p>
+                    <p class="accomp">Avec son coulis de citron</p>
 
-                <div class="prix">
-                    <p>22€</p>
-            </div>
+                    <div class="prix">
+                        <p>22€</p>
+                    </div>
 
-            <div class="btn">
+                    <div class="btn">
 
-                <h2 class="selection">Tarte au citron meringuée </h2>
+                        <h2 class="selection">Tarte au citron meringuée </h2>
 
-                <p class="accomp">Déstructurée</p>
+                        <p class="accomp">Déstructurée</p>
 
-                <div class="prix">
-                    <p>23€</p>
-            </div>
+                        <div class="prix">
+                            <p>23€</p>
+                        </div>
 
-        </div>
+                    </div>
     </section>
 
     <section class="commander">
 
         <div class="cd-btn">
-            <ul>
-                <li><a href="commander" class="li-btn">Commander</a></li>
-            </ul>
+            <a href="#" class="btn"><button>Commander</button></a>
         </div>
 
     </section>
+
+        <footer>
+
+        <div>
+            <a href="#">
+                <i class="fa-solid fa-utensils"></i>
+                <p>Proposer un restaurant</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="#">
+                <i class="fa-solid fa-handshake-angle"></i>
+                <p>Devenir partenaire</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="#">
+                <p>Mentions légales</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="mailto:contact@hotmail.fr">
+                <p>Contact</p>
+            </a>
+        </div>
+
+    </footer> 
 
 </body>
 

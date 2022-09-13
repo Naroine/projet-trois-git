@@ -1,0 +1,62 @@
+html {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+/****** Body police******/
+
+body {
+    font-family: "Roboto";
+    font-family: "Shrikhand";
+}
+
+/****** topbar ******/
+
+.logo img {
+    width: 20%;
+}
+
+/****** selection ******/
+
+#selection h1 {
+    margin-top: 0%;
+    padding-top: 3%;
+    width: 46%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cadre p {
+    width: 46%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pin-logo {
+    height: 25px;
+    width: 100%;
+    display: flex;
+    padding-top: 18px;
+    background-color: #d1d1d1;
+}
+
+.pin-logo p {
+    margin-top: 0;
+    margin-left: 25px;
+}
+
+.pin-logo i {
+    margin-left: 41%;
+}
+
+.cadre {
+    background-color: #eceaea;
+}
+
+.cadre {
+    padding-bottom: 5%;
+}
+
+.btn 
