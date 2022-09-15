@@ -10,16 +10,23 @@ body {
 
 /***** fav *****/
 
-.heart {
-
+.heart i:after {
+    background-color: #ff79da;
+    background-image: linear-gradient(0deg,#9356dce6,#ff79dae6);
+    transition-duration: .25s;
 }
 
 
 
 /****** topbar ******/
 
+#topbar {
+    box-shadow: 0 0 0.5rem #00000040;
+}
+
 .logo img {
     width: 40%;
+    margin: 7%;
 }
 
 header i {
@@ -31,7 +38,7 @@ header i {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateY(-1144%);
+    transform: translateY(-1068%);
     font-size: 1.2rem;
     color: #000;
 }
@@ -42,12 +49,105 @@ header i {
     width: 100%;
     object-fit: cover;
 }
+/****** menu ******/
+
+#main-menu {
+    margin-top: -4rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #f6f6f6;
+    z-index: 1;
+    position: relative;
+}
+
+.titre-rest {
+    display: flex;
+    font-family: Shrikhand;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 25px 0px 15px;
+}
+
+.menu-btn {
+    
+}
+
+.menu-btn::before {
+
+}
+
+.menu-btn::after {
+
+}
+
+.bloc-menu {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: start;
+    width: 100%;
+    font-size: 11px;
+}
+
+.bloc-menu p {
+    font-size: 15px;
+    margin-bottom: 2%;
+
+}
+
+.prix {
+    width: 20%;
+    font-weight: 700;
+}
+
+.menu-titre {
+    position: relative;
+    padding-bottom: 8px;
+    font-weight: 400;
+    display: flex;
+    margin: 0%;
+    padding-top: 25px;
+    margin-bottom: 25px;
+}
+
+.menu-titre:after {
+    content: "";
+    width: 3rem;
+    height: 0.25rem;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#menu {
+    background-color: #f6f6f6;
+    padding: 0% 4%;
+}
+
+.choix {
+    background-color: white;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0.25rem 0.25rem 1rem #0000001a;
+    animation-fill-mode: both;
+    transform: scale(1);
+    transition: 1000ms;
+    margin: 13px 0px;
+}
 
 /****** selection ******/
 
-#selection h1 {
+.selection {
     margin-top: 0%;
     padding-top: 3%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1%;
+}
+
+.accomp {
+    margin-top: 0%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -95,10 +195,10 @@ header i {
     text-align: center;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
-    border-radius: 30px;
+    border-radius: 100px;
     background-color: #ff79da;
-    background-image: linear-gradient(0deg,#9356dce6,#ff79dae6);
-    transition-duration: .25s;
+    background-image: linear-gradient(344deg,#9356dce6,#ff79dae6);
+    font-weight: 500;
 }
 
 /****** Fonctionnement ******/
@@ -223,6 +323,14 @@ header i {
     padding-bottom: 30px;
 }
 
+/******* commander *******/
+
+.btn-cmd {
+    padding: 9% 0%;
+}
+
+
+
 /****** footer ******/
 
 footer {
@@ -245,20 +353,20 @@ footer i {
 }
 
 .footer-body {
-    padding-left: 15px;
+    padding-left: 15px;   
+    padding: 0% 4% 4% 4%;
 }
 
-.footer  {
-
-}
-
-.footer-body h1 {
+.footer-body .footer-logo {
     width: 15%;
     color: #fff;
     display: flex;
     padding-top: 20px;
     font-family: Shrikhand,"cursive";
-    font-size: 2em;
+    font-size: 1.1em;
 }
 
+footer p {
+    margin-bottom: auto;
+}
 
