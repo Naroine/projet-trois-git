@@ -7,15 +7,8 @@ body {
     margin: 0;
     background: #f6f6f6;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -33,15 +26,8 @@ main {
     margin: 0;
     padding: 0;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -273,7 +259,7 @@ opacity: 1s both;
 
 /****** selection ******/
 
-.selection {
+#selection {
     background: #fafafa;
     width: 100%;
 }
@@ -297,11 +283,7 @@ opacity: 1s both;
 
 .localisation {
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     background: #f3f3f3;
     color: #7a7a7a;
@@ -317,15 +299,8 @@ opacity: 1s both;
     width: 100%;
     padding: 20px;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     padding: 50px 0;
 }
@@ -353,15 +328,8 @@ opacity: 1s both;
     width: 100%;
     background: white;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -371,16 +339,11 @@ opacity: 1s both;
     background-color: white;
     padding: 0;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .tuto {
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     background: #f6f6f6;
     height: auto;
@@ -388,7 +351,6 @@ opacity: 1s both;
     margin: 10px 20px;
     border-radius: 20px;
     position: relative;
-    -webkit-box-shadow: 0px 0px 10px 0px #00000029;
     box-shadow: 0px 0px 10px 0px #00000029;
 }
 
@@ -574,3 +536,10 @@ footer p {
     margin-bottom: auto;
 }
 
+#colonne-1 {
+    oui
+}
+
+#colonne-2 {
+    oui
+}

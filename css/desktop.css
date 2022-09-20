@@ -1,0 +1,47 @@
+@media only screen and (min-width: 1024px) {
+    main {
+        width: 100%;
+    }
+
+    .fonctionnement-cont {
+        width: 100%;
+        flex-direction: unset;
+    }
+
+    .fonctionnement-cont h1 {
+        margin-right: 80px;
+    }
+
+    .tuto {
+        width: 100%;
+    }
+
+    .card {
+       width: 20%;
+       height: 290px; 
+    }
+
+    .card-image {
+        height: 228px;
+    }
+
+    .card-list {
+        display: flex;
+
+    }
+
+    .footer-body {
+        padding: 0% 2% 1% 4%;
+        display: flex;
+    }
+
+    .footer-body .footer-logo {
+        font-size: 2em;
+    }
+
+    .footer a {
+        padding-top: 13px;
+        margin-right: 370px
+    }
+    
+}
