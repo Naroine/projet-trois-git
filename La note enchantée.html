@@ -13,186 +13,320 @@
 </head>
 
 <body>
-
     <header id="topbar">
         <a href="index.html">
-            <i class="fa-solid fa-arrow-left"></i>
+            <div class="arrow">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
         </a>
         <div class="logo">
             <img src="images/logo/ohmyfood.png" alt="ohmyfood" />
         </div>
-
     </header>
+    <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" class="image-header">
 
-    <img src="" alt="La palette du goût" class="image-header">
+    <main id="main-menu">
 
-    <section class="titre-menu">
-        <h1>La note enchantée</h1>
-    </section>
-
-    <div class="menu-btn">
-        <i class="fa-regular fa-heart"></i>
-    </div>
+        <section class="titre-rest">
+            <h2>La note enchantée</h2>
 
 
-    <section>
-        <div class="entrees">
+            <div class="fav">
+                <svg class="heart heart-full" viewBox="-20 0 550 550" xml:space="preserve">
+                    <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                 c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                 c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                 s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                 C512,93.417,453.532,30,376,30z"></path>
+                    <defs>
+                        <linearGradient id="text-fill">
+                            <stop offset="0%" stop-color="#9356DC"></stop>
+                            <stop offset="100%" stop-color="#FF79DA"></stop>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <svg class="heart heart-empty" viewBox="-20 0 550 550" xml:space="preserve">
+                    <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                 c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                 c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                 s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                 C512,93.417,453.532,30,376,30z"></path>
+                    <defs>
+                        <linearGradient>
+                            <stop offset="0%" stop-color="#9356DC"></stop>
+                            <stop offset="100%" stop-color="#FF79DA"></stop>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
 
-            <h2>ENTRÉES</h2>
+        </section>
 
-            <div class="choix">
 
-                <h2 class="selection">Ravioles de fois gras</h2>
+        <section>
+            <div id="menu">
 
-                <p class="accomp">Accompagnés de leur créme à la truffe</p>
+                <h3 class="menu-titre">ENTRÉES</h3>
 
-                <div class="prix">
-                    <p>25€</p>
-                </div>
 
-                <div class="choix">
+                <div class="choix appears-with-opacity" id="delay-1">
 
-                    <h2 class="selection">Caviar osciètre</h2>
+                    <div class="prix-menu">
 
-                    <p class="accomp">Sur un blini à la farine de blé noir</p>
+                        <div class="bloc-menu">
 
-                    <div class="prix">
-                        <p>35€</p>
+                            <p class="selection">Ravioles de foie gras</p>
+
+                            <p class="accomp">Accompagnés de leur crème à la truffe</p>
+
+                        </div>
+
+
+                        <div class="prix">
+                            <p>25€</p>
+                        </div>
                     </div>
 
-                    <div class="choix">
+                    <div class="animation-menu">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
 
-                        <h2 class="selection">Homard et espuma de potiron</h2>
+                </div>
 
-                        <p class="accomp">Mariné aux zestes d'orange</p>
 
+
+
+                <div class="choix appears-with-opacity" id="delay-2">
+
+                    <div class="prix-menu">
+
+                        <div class="bloc-menu">
+                            <P class="selection">Caviar osciètre </P>
+
+                            <p class="accomp">Sur blini à la farine de blé noir</p>
+
+                        </div>
+                        <div class="prix">
+                            <p>35€</p>
+                        </div>
+
+                    </div>
+
+                    <div class="animation-menu">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+
+                </div>
+
+                <div class="choix appears-with-opacity" id="delay-3">
+
+                    <div class="prix-menu">
+
+                        <div class="bloc-menu">
+                            <P class="selection">Homard et espuma de potiron</P>
+
+                            <p class="accomp">Mariné aux zestes d'orange</p>
+
+                        </div>
                         <div class="prix">
                             <p>20€</p>
                         </div>
 
-                        <div class="choix">
+                    </div>
 
-                            <h2 class="selection">Foie gras de canard cuit entier</h2>
+                    <div class="animation-menu">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+
+                </div>
+
+                <div class="choix appears-with-opacity" id="delay-4">
+
+                    <div class="prix-menu">
+
+                        <div class="bloc-menu">
+                            <P class="selection">Foie gras de canard cuit entier</P>
 
                             <p class="accomp">Confiture de figue et pain toasté</p>
 
-                            <div class="prix">
-                                <p>35€</p>
-                            </div>
-
                         </div>
-    </section>
+                        <div class="prix">
+                            <p>20€</p>
+                        </div>
 
-    <section>
-        <div class="plats">
-
-            <h2>PLATS</h2>
-
-            <div class="choix">
-
-                <h2 class="selection">Noix de coquilles Saint-Jacques</h2>
-
-                <p class="accomp">Sur lit de purée de céleri-rave</p>
-
-                <div class="prix">
-                    <p>40€</p>
-                </div>
-
-                <div class="choix">
-
-                    <h2 class="selection">Langoustine poêlée</h2>
-
-                    <p class="accomp">Purée de patate douce</p>
-
-                    <div class="prix">
-                        <p>35€</p>
                     </div>
 
-                    <div class="choix">
+                    <div class="animation-menu">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
 
-                        <h2 class="selection">Mijoté de queue de boeuf </h2>
+                </div>
 
-                        <p class="accomp">Et riz sauvage aux zestes de citron</p>
 
+            </div>
+        </section>
+
+        <section>
+            <div id="menu">
+
+                <h3 class="menu-titre">PLATS</h3>
+
+                <div class="choix appears-with-opacity" id="delay-5">
+
+                    <div class="prix-menu">
+
+                        <div class="bloc-menu">
+
+                            <P class="selection">Noix de coquilles Saint-Jacques</P>
+
+                            <p class="accomp">Sur lit de purée de céleri-rave</p>
+
+                        </div>
+
+                        <div class="prix">
+                            <p>40€</p>
+                        </div>
+
+                        <div class="animation-menu">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="choix appears-with-opacity" id="delay-6">
+                    <div class="prix-menu">
+                        <div class="bloc-menu">
+                            <P class="selection">Langoustine poêlée</P>
+
+                            <p class="accomp">Purée de patate douce</p>
+                        </div>
+                        <div class="prix">
+                            <p>35€</p>
+                        </div>
+                    </div>
+                    <div class="animation-menu">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+
+                </div>
+                <div class="choix appears-with-opacity" id="delay-7">
+                    <div class="prix-menu">
+                        <div class="bloc-menu">
+                            <P class="selection">Mijoté de queue de boeuf</P>
+
+                            <p class="accomp">Et riz sauvage aux zestes de citron</p>
+                        </div>
                         <div class="prix">
                             <p>44€</p>
                         </div>
-
                     </div>
-    </section>
+                    <div class="animation-menu">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
 
-    <section>
-        <div class="desserts">
+                </div>
+            </div>
+        </section>
 
-            <h2>DESSERTS</h2>
+        <section>
+            <div id="menu">
 
-            <div class="choix">
+                <h3 class="menu-titre">DESSERTS</h3>
 
-                <h2 class="selection">Macaron noisette et chocolat</h2>
+                <div class="choix appears-with-opacity" id="delay-8">
+                    <div class="prix-menu">
+                        <div class="bloc-menu">
+                            <P class="selection">Macaron noisette et chocolat</P>
 
-                <p class="accomp">Glace au caramel brun et sel de Guérande</p>
+                            <p class="accomp">Glace au caramel brun et sel de Guérande</p>
+                        </div>
+                        <div class="prix">
+                            <p>18€</p>
+                        </div>
+                    </div>
+                    <div class="animation-menu">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
 
-                <div class="prix">
-                    <p>18€</p>
+                </div>
+                <div class="choix appears-with-opacity" id="delay-9">
+                    <div class="prix-menu">
+                        <div class="bloc-menu">
+                            <P class="selection">Baba au rhum revisité </P>
+
+                            <p class="accomp">Avec son coulis de citron</p>
+                        </div>
+                        <div class="prix">
+                            <p>22€</p>
+                        </div>
+                    </div>
+                    <div class="animation-menu">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+
                 </div>
 
-                <div class="choix">
+                <div class="choix appears-with-opacity" id="delay-10">
+                    <div class="prix-menu">
+                        <div class="bloc-menu">
+                            <P class="selection">Tarte au citron meringuée</P>
 
-                    <h2 class="selection">Baba au rhum revisité </h2>
-
-                    <p class="accomp">Avec son coulis de citron</p>
-
-                    <div class="prix">
-                        <p>22€</p>
-                    </div>
-
-                    <div class="choix">
-
-                        <h2 class="selection">Tarte au citron meringuée </h2>
-
-                        <p class="accomp">Déstructurée</p>
-
+                            <p class="accomp">Déstructurée</p>
+                        </div>
                         <div class="prix">
                             <p>23€</p>
                         </div>
-
                     </div>
-    </section>
+                    <div class="animation-menu">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
 
-    <section class="commander">
+                </div>
+        </section>
 
-        <div class="cd-btn">
-            <a href="#" class="btn"><button>Commander</button></a>
-        </div>
+        <section class="commander">
 
-    </section>
+
+            <div class="btn-cmd">
+                <div class="btn-menu">Commander</div>
+            </div>
+
+
+        </section>
+    </main>
 
     <footer>
 
-        <div>
-            <a href="#">
-                <i class="fa-solid fa-utensils"></i>
-                <p>Proposer un restaurant</p>
-            </a>
-        </div>
+        <div class="footer-body">
 
-        <div>
-            <a href="#">
-                <i class="fa-solid fa-handshake-angle"></i>
-                <p>Devenir partenaire</p>
-            </a>
-        </div>
+            <div class="footer-logo">ohmyfood</div>
 
-        <div>
-            <a href="#">
-                <p>Mentions légales</p>
-            </a>
-        </div>
+            <div>
+                <a href="#">
+                    <i class="fa-solid fa-utensils"></i>
+                    <p>Proposer un restaurant</p>
+                </a>
+            </div>
 
-        <div>
-            <a href="mailto:contact@hotmail.fr">
-                <p>Contact</p>
-            </a>
+            <div>
+                <a href="#">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                    <p>Devenir partenaire</p>
+                </a>
+            </div>
+
+            <div>
+                <a href="#">
+                    <p>Mentions légales</p>
+                </a>
+            </div>
+
+            <div>
+                <a href="mailto:contact@hotmail.fr">
+                    <p>Contact</p>
+                </a>
+            </div>
+
         </div>
 
     </footer>

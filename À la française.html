@@ -14,182 +14,293 @@
 
 <body>
     <header id="topbar">
-        <a class="header-arrow" href="index.html">
-            <i class="fa-solid fa-arrow-left"></i>
+        <a href="index.html">
+            <div class="arrow">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
         </a>
         <div class="logo">
-            <img src="images/logo/ohmyfood.png" alt="ohmyfood"/>
+            <img src="images/logo/ohmyfood.png" alt="ohmyfood" />
         </div>
-
     </header>
 
-    <img src="" alt="La palette du goût" class="image-header">
+    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" class="image-header">
 
-    <section class="titre-menu">
-        <h1>À la française</h1>
-    </section>
+    <main id="main-menu">
 
-    <div class="menu-btn">
-        <i class="fa-regular fa-heart"></i>
-    </div>
+        <section class="titre-rest">
+            <h2>À la française</h2>
 
 
-    <section>
-        <div class="entrees">
-
-            <h2>ENTRÉES</h2>
-
-            <div class="choix">
-
-                <h2 class="selection">Tartare de poulpe acidulé</h2>
-
-                <p class="accomp">Aux zests d'orange</p>
-
-                <div class="prix">
-                    <p>25€</p>
-
-
-                </div>
+            <div class="fav">
+                <svg class="heart heart-full" viewBox="-20 0 550 550" xml:space="preserve">
+                    <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                 c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                 c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                 s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                 C512,93.417,453.532,30,376,30z"></path>
+                    <defs>
+                        <linearGradient id="text-fill">
+                            <stop offset="0%" stop-color="#9356DC"></stop>
+                            <stop offset="100%" stop-color="#FF79DA"></stop>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <svg class="heart heart-empty" viewBox="-20 0 550 550" xml:space="preserve">
+                    <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                 c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                 c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                 s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                 C512,93.417,453.532,30,376,30z"></path>
+                    <defs>
+                        <linearGradient>
+                            <stop offset="0%" stop-color="#9356DC"></stop>
+                            <stop offset="100%" stop-color="#FF79DA"></stop>
+                        </linearGradient>
+                    </defs>
+                </svg>
             </div>
 
-            <div class="choix">
+        </section>
 
-                <h2 class="selection">Velouté de légumes d'antan</h2>
 
-                <p class="accomp">Carote,panais,topinambour</p>
+        <section>
+            <div id="menu">
 
-                <div class="prix">
-                    <p>35€</p>
-                </div>
-            </div>
+                <h3 class="menu-titre">ENTRÉES</h3>
 
-            <div class="choix">
+                <div class="choix appears-with-opacity" id="delay-1">
 
-                <h2 class="selection">Soupe à l'ognion</h2>
+                    <div class="prix-menu">
 
-                <p class="accomp">Revisitée</p>
+                        <div class="bloc-menu">
 
-                <div class="prix">
-                    <p>20€</p>
-                </div>
-            </div>
+                            <p class="selection">Fricassée d'escargot</p>
 
-        </div>
-    </section>
+                            <p class="accomp">Au piment d'Espelette </p>
 
-    <section>
-        <div class="plats">
+                        </div>
 
-            <h2>PLATS</h2>
-
-            <div class="choix">
-
-                <h2 class="selection">Coquilles Saint-Jacques</h2>
-
-                <p class="accomp">Accompagnées d'une purée de panais</p>
-
-                <div class="prix">
-                    <p>40€</p>
-                </div>
-            </div>
-
-            <div class="choix">
-
-                <h2 class="selection">Megret de canard</h2>
-
-                <p class="accomp">en parmentier de pommes de terres</p>
-
-                <div class="prix">
-                    <p>35€</p>
-                </div>
-            </div>
-
-            <div class="choix">
-
-                <h2 class="selection">Pigeonneau d'îlle-et-Vilane</h2>
-
-                <p class="accomp">Sur son lit de gnocchis aux légumes</p>
-
-                <div class="card">
-                    <p>44€</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section>
-        <div class="desserts">
-
-            <h2>DESSERTS</h2>
-
-            <div class="choix">
-
-                <h2 class="selection">Pétales de violettes glacés</h2>
-
-                <p class="accomp">Et purée de noisettes</p>
-
-                <div class="prix">
-                    <p>18€</p>
-                </div>
-
-                <div class="choix">
-
-                    <h2 class="selection">Fondant au chocolat</h2>
-
-                    <p class="accomp">Revisité</p>
-
-                    <div class="prix">
-                        <p>22€</p>
-                    </div>
-
-                    <div class="choix">
-
-                        <h2 class="selection">Millefeuille croustillant</h2>
-
-                        <p class="accomp">Myrtilles et pâte d'amande</p>
 
                         <div class="prix">
-                            <p>23€</p>
+                            <p>25€</p>
+                        </div>
+                    </div>
+
+                    <div class="animation-menu">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+
+                </div>
+                <div class="choix appears-with-opacity" id="delay-2">
+
+                    <div class="prix-menu">
+
+                        <div class="bloc-menu">
+                            <P class="selection">Foie gras de canard mi-cuit</P>
+
+                            <p class="accomp">Et ses copeaux de truffe noire</p>
+
+                        </div>
+                        <div class="prix">
+                            <p>35€</p>
                         </div>
 
                     </div>
-    </section>
 
-    <section id="commander">
+                    <div class="animation-menu">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
 
-        <div class="cd-btn">
-            <a href="#" class="btn"><button>Commander</button></a>
-        </div>
+                </div>
 
-    </section>
+                <div class="choix appears-with-opacity" id="delay-3">
+
+                    <div class="prix-menu">
+
+                        <div class="bloc-menu">
+                            <P class="selection">Oeuf au plat</P>
+
+                            <p class="accomp">Accompagné de sa ribambelle de légumes</p>
+
+                        </div>
+                        <div class="prix">
+                            <p>20€</p>
+                        </div>
+
+                    </div>
+
+                    <div class="animation-menu">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <section>
+            <div id="menu">
+
+                <h3 class="menu-titre">PLATS</h3>
+
+                <div class="choix appears-with-opacity" id="delay-4">
+
+                    <div class="prix-menu">
+
+                        <div class="bloc-menu">
+
+                            <P class="selection">Filet de boeuf aux herbes</P>
+
+                            <p class="accomp">Accompagné de sa ribambelle de légumes</p>
+
+                        </div>
+
+                        <div class="prix">
+                            <p>40€</p>
+                        </div>
+
+                        <div class="animation-menu">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="choix appears-with-opacity" id="delay-5">
+                    <div class="prix-menu">
+                        <div class="bloc-menu">
+                            <P class="selection">Parmentier de queue de boeuf</P>
+
+                            <p class="accomp">À la truffe noire sur sa purée de panais</p>
+                        </div>
+                        <div class="prix">
+                            <p>35€</p>
+                        </div>
+                    </div>
+                    <div class="animation-menu">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+
+                </div>
+                <div class="choix appears-with-opacity" id="delay-6">
+                    <div class="prix-menu">
+                        <div class="bloc-menu">
+                            <P class="selection">Filet de turbot</P>
+
+                            <p class="accomp">Aux agrumes</p>
+                        </div>
+                        <div class="prix">
+                            <p>44€</p>
+                        </div>
+                    </div>
+                    <div class="animation-menu">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="menu">
+
+                <h3 class="menu-titre">DESSERTS</h3>
+
+                <div class="choix appears-with-opacity" id="delay-7">
+                    <div class="prix-menu">
+                        <div class="bloc-menu">
+                            <P class="selection">Paris-Brest</P>
+
+                            <p class="accomp">Revisité</p>
+                        </div>
+                        <div class="prix">
+                            <p>18€</p>
+                        </div>
+                    </div>
+                    <div class="animation-menu">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+
+                </div>
+                <div class="choix appears-with-opacity" id="delay-8">
+                    <div class="prix-menu">
+                        <div class="bloc-menu">
+                            <P class="selection">Macaron au chocolat d'exception</P>
+
+                            <p class="accomp">Et glace à la vanille de Madagascar</p>
+                        </div>
+                        <div class="prix">
+                            <p>22€</p>
+                        </div>
+                    </div>
+                    <div class="animation-menu">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+
+                </div>
+
+                <div class="choix appears-with-opacity" id="delay-9">
+                    <div class="prix-menu">
+                        <div class="bloc-menu">
+                            <P class="selection">Mousse au chocolat</P>
+
+                            <p class="accomp">Au piment d'Espelette et à la truffe noire</p>
+                        </div>
+                        <div class="prix">
+                            <p>23€</p>
+                        </div>
+                    </div>
+                    <div class="animation-menu">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+
+                </div>
+        </section>
+
+        <section class="commander">
+
+
+            <div class="btn-cmd">
+                <div class="btn-menu">Commander</div>                
+            </div>
+
+
+        </section>
+    </main>
 
     <footer>
 
-        <div>
-            <a href="#">
-                <i class="fa-solid fa-utensils"></i>
-                <p>Proposer un restaurant</p>
-            </a>
-        </div>
+        <div class="footer-body">
 
-        <div>
-            <a href="#">
-                <i class="fa-solid fa-handshake-angle"></i>
-                <p>Devenir partenaire</p>
-            </a>
-        </div>
+            <div class="footer-logo">ohmyfood</div>
 
-        <div>
-            <a href="#">
-                <p>Mentions légales</p>
-            </a>
-        </div>
+            <div>
+                <a href="#">
+                    <i class="fa-solid fa-utensils"></i>
+                    <p>Proposer un restaurant</p>
+                </a>
+            </div>
 
-        <div>
-            <a href="mailto:contact@hotmail.fr">
-                <p>Contact</p>
-            </a>
+            <div>
+                <a href="#">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                    <p>Devenir partenaire</p>
+                </a>
+            </div>
+
+            <div>
+                <a href="#">
+                    <p>Mentions légales</p>
+                </a>
+            </div>
+
+            <div>
+                <a href="mailto:contact@hotmail.fr">
+                    <p>Contact</p>
+                </a>
+            </div>
+
         </div>
 
     </footer>

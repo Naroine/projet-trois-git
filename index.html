@@ -12,6 +12,12 @@
     <title>Ohmyfood</title>
 </head>
 
+<div class="spinner">
+    <div class="spinner-border">
+        <div class="spinner-center"></div>
+    </div>
+</div>
+
 <body>
     <header id="topbar">
         <div class="logo">
@@ -32,12 +38,10 @@
 
         <section id="selection">
             <div class="cadre">
-                <div class="explo">
-                    <h2 class="explo-titre">Réserver le menu qui vous covient</h2>
-                    <p class="explo-text">découvrez des restaurants d'exeption, séléctionnés part nos soins.</p>
-                </div>
+                <h2 class="explo-titre">Réserver le menu qui vous covient</h2>
+                <p class="explo-text">découvrez des restaurants d'exeption, séléctionnés part nos soins.</p>
                 <div class="selection-button">
-                    <a href="#"><button class="btn" type="button">Explorer nos restaurants</button></a>
+                    <p>Explorer nos restaurants</button></p>
                 </div>
             </div>
         </section>
@@ -82,16 +86,42 @@
                             <p>Nouveau</p>
                         </div>
                         <div class="card-body">
-                            <div class="card-titre">
-                                <h3>La palette du goût</h3>
-                            </div>
+                            <div class="card-info">
+                                <div class="card-titre">
+                                    <h3>La palette du goût</h3>
+                                </div>
 
-                            <div class="card-sect">
-                                <p>Ménilmontant</p>
+                                <div class="card-sect">
+                                    <p>Ménilmontant</p>
+                                </div>
                             </div>
-
-                            <div class="heart">
-                                <i class="fa-regular fa-heart"></i>
+                            <div class="fav">
+                                <svg class="heart heart-full" viewBox="-20 0 550 550" xml:space="preserve">
+                                    <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                                 c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                                 c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                                 s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                                 C512,93.417,453.532,30,376,30z"></path>
+                                    <defs>
+                                        <linearGradient id="text-fill">
+                                            <stop offset="0%" stop-color="#9356DC"></stop>
+                                            <stop offset="100%" stop-color="#FF79DA"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <svg class="heart heart-empty" viewBox="-20 0 550 550" xml:space="preserve">
+                                    <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                                 c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                                 c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                                 s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                                 C512,93.417,453.532,30,376,30z"></path>
+                                    <defs>
+                                        <linearGradient>
+                                            <stop offset="0%" stop-color="#9356DC"></stop>
+                                            <stop offset="100%" stop-color="#FF79DA"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
                             </div>
                         </div>
                     </div>
@@ -105,18 +135,42 @@
                             <p>Nouveau</p>
                         </div>
                         <div class="card-body">
-                            <div class="card-titre">
-                                <h3>La note enchantée</h3>
-                            </div>
-
-                            <div class="card-sect">
-                                <p>Charonne</p>
-                            </div>
-
-                            <div class="fav">
-                                <div class="heart">
-                                    <i class="fa-regular fa-heart"></i>
+                            <div class="card-info">
+                                <div class="card-titre">
+                                    <h3>La note enchantée</h3>
                                 </div>
+
+                                <div class="card-sect">
+                                    <p>Charonne</p>
+                                </div>
+                            </div>
+                            <div class="fav">
+                                <svg class="heart heart-full" viewBox="-20 0 550 550" xml:space="preserve">
+                                    <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                                 c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                                 c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                                 s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                                 C512,93.417,453.532,30,376,30z"></path>
+                                    <defs>
+                                        <linearGradient id="text-fill">
+                                            <stop offset="0%" stop-color="#9356DC"></stop>
+                                            <stop offset="100%" stop-color="#FF79DA"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <svg class="heart heart-empty" viewBox="-20 0 550 550" xml:space="preserve">
+                                    <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                                 c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                                 c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                                 s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                                 C512,93.417,453.532,30,376,30z"></path>
+                                    <defs>
+                                        <linearGradient>
+                                            <stop offset="0%" stop-color="#9356DC"></stop>
+                                            <stop offset="100%" stop-color="#FF79DA"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
                             </div>
                         </div>
                     </div>
@@ -127,22 +181,45 @@
                             <div class="card-image"><img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                                     alt="À la française"></div>
                         </a>
-                        <div class="new new-3">
-                            <p>Nouveau</p>
-                        </div>
                         <div class="card-body">
-                            <div class="card-titre">
-                                <h3>À la française</h3>
-                            </div>
-
-                            <div class="card-sect">
-                                <p>Cité Rouge</p>
-                            </div>
-
-                            <div class="fav">
-                                <div class="heart">
-                                    <i class="fa-regular fa-heart"></i>
+                            <div class="card-info">
+                                <div class="card-titre">
+                                    <h3>À la française</h3>
                                 </div>
+
+                                <div class="card-sect">
+                                    <p>Cité Rouge</p>
+                                </div>
+                            </div>
+                            <div class="fav">
+
+                                <svg class="heart heart-full" viewBox="-20 0 550 550" xml:space="preserve">
+                                    <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                                 c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                                 c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                                 s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                                 C512,93.417,453.532,30,376,30z"></path>
+                                    <defs>
+                                        <linearGradient id="text-fill">
+                                            <stop offset="0%" stop-color="#9356DC"></stop>
+                                            <stop offset="100%" stop-color="#FF79DA"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <svg class="heart heart-empty" viewBox="-20 0 550 550" xml:space="preserve">
+                                    <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                                 c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                                 c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                                 s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                                 C512,93.417,453.532,30,376,30z"></path>
+                                    <defs>
+                                        <linearGradient>
+                                            <stop offset="0%" stop-color="#9356DC"></stop>
+                                            <stop offset="100%" stop-color="#FF79DA"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+
                             </div>
                         </div>
                     </div>
@@ -153,22 +230,45 @@
                                 src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                                 alt="Le délice des sens"></div>
                     </a>
-                    <div class="new new-4">
-                        <p>Nouveau</p>
-                    </div>
                     <div class="card-body">
-                        <div class="card-titre">
-                            <h3>Le délice des sens</h3>
-                        </div>
-
-                        <div class="card-sect">
-                            <p>Folie-Méricourt</p>
-                        </div>
-
-                        <div class="fav">
-                            <div class="heart">
-                                <i class="fa-regular fa-heart"></i>
+                        <div class="card-info">
+                            <div class="card-titre">
+                                <h3>Le délice des sens</h3>
                             </div>
+
+                            <div class="card-sect">
+                                <p>Folie-Méricourt</p>
+                            </div>
+                        </div>
+                        <div class="fav">
+
+                            <svg class="heart heart-full" viewBox="-20 0 550 550" xml:space="preserve">
+                                <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                             c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                             c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                             s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                             C512,93.417,453.532,30,376,30z"></path>
+                                <defs>
+                                    <linearGradient id="text-fill">
+                                        <stop offset="0%" stop-color="#9356DC"></stop>
+                                        <stop offset="100%" stop-color="#FF79DA"></stop>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg class="heart heart-empty" viewBox="-20 0 550 550" xml:space="preserve">
+                                <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                             c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                             c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                             s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                             C512,93.417,453.532,30,376,30z"></path>
+                                <defs>
+                                    <linearGradient>
+                                        <stop offset="0%" stop-color="#9356DC"></stop>
+                                        <stop offset="100%" stop-color="#FF79DA"></stop>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+
                         </div>
                     </div>
                 </div>
