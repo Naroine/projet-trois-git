@@ -58,19 +58,12 @@ body {
 
 /***** fav *****/
 
-.fav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-    width: 30px;
-}
-
 .fav .heart-full {
     position: absolute;
     fill: url(#text-fill);
     stroke: none;
 }
+
 
 .fav .heart {
     width: 30px;
@@ -80,14 +73,22 @@ body {
     cursor: pointer;
 }
 
-.fav .heart-empty {
-    width: 50px;
-    position: relative;
+.fav .heart-empty:hover {
+    opacity: 0;
+    transition: 0.5s;
 }
 
+.fav .heart-empty {
+    position: absolute;
+}
 
-
-
+.fav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    width: 30px;
+}
 
 /****** topbar ******/
 
@@ -136,6 +137,16 @@ header .arrow {
 
 /****** menu ******/
 
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @keyframes slide-left {
     0%{
         transform: scaleX(0);
@@ -146,15 +157,67 @@ header .arrow {
     }
 }
 
-@keyframes rotate {
+@keyframes opacity {
     0%  { 
-        opacity: 0; 
+        opacity: 0;
     }
 
     100% { 
-        opacity: 1; 
+        opacity: 1;
     }
 }
+
+@keyframes spinner-border {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+}
+
+@keyframes spinner {
+    0% {
+        visibility: visible;
+        opacity: 0.9;
+    }
+
+    70% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.choix .animation-menu i {
+        font-size: 30px;
+        color: white;
+        transform: rotate(180deg);
+        animation: rotate 0.5s both;      
+}
+
+.choix .animation-menu {
+    display: none;
+    position: absolute;
+    background: #99E2D0;
+    border-radius: 0 15px 15px 0;
+    right: 0px;
+    padding: 0 13px;
+    height: 100%;
+}
+
 #main-menu {
     margin-top: -4rem;
     border-radius: 2rem 2rem 0 0;
@@ -170,27 +233,42 @@ header .arrow {
     justify-content: space-between;
     align-items: center;
     padding: 13px 25px 0px 15px;
-    width: 85%;
+    width: 92%;
 }
 
-.choix .animation-menu {
-    display: none;
-    position: absolute;
-    background: #99E2D0;
-    border-radius: 0 15px 15px 0;
-    right: 0px;
-    padding: 0 13px;
-    height: 100%;
+.choix {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    border-radius: 15px;
+    background-color: white;
+    -webkit-box-shadow: 5px 5px 15px 5px #0000001a;
+    box-shadow: 5px 5px 15px 5px #0000001a;
+
 }
 
-.choix .animation-menu i {
-        font-size: 30px;
-        color: white;
-        -webkit-transform: rotate(180deg);
-        transform: rotate(180deg);
-        -webkit-animation: rotate 0.5s both;
-        animation: rotate 0.5s both;
+.choix:hover .prix {
+    padding-right: 70px;
+    transition: 0.5s ease;
 }
+
+.choix:hover .animation-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slide-left 0.5s ease;
+    transform-origin: right;
+}
+
 
 .bloc-menu {
     margin-left: 20px;
@@ -202,10 +280,12 @@ header .arrow {
     margin: 0;
     text-overflow: ellipsis;
     overflow: hidden;
-    text-align: start;
-
 }
 
+.choix .prix p:hover {
+    padding-right: 70px;
+    transition: 0.5s ease;
+}
 
 .prix {
     padding-right: 20px;
@@ -244,25 +324,7 @@ header .arrow {
     grid-gap: 15px
 }
 
-.choix {
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-    border-radius: 15px;
-    background-color: white;
-    -webkit-box-shadow: 5px 5px 15px 5px #0000001a;
-    box-shadow: 5px 5px 15px 5px #0000001a;
 
-}
 
 .prix-menu {
     width: 100%;
@@ -275,9 +337,6 @@ header .arrow {
     align-items: center;
 }
 
-.appears-with-opacity {
-opacity: 1s both;
-}
 
 #delay-1 {
     animation-delay: 0s;
@@ -342,12 +401,6 @@ opacity: 1s both;
     text-align: center;
 }
 
-.accomp {
-    margin-top: 0%;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 
 .localisation {
     display: flex;
@@ -373,6 +426,9 @@ opacity: 1s both;
     padding: 50px 0;
 }
 
+.selection {
+    font-weight: bold;
+}
 
 .selection-button {
     opacity: 1;
@@ -382,13 +438,12 @@ opacity: 1s both;
     padding: 0 20px;
     border-radius: 200px;
     -webkit-box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 30%);
-    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 30%);
+    box-shadow: 0px 0px 10px 0px #0000004d;
 }
 
-.selection-button {
+.selection-button:hover {
     opacity: 0.8;
     cursor: pointer;
-    -webkit-transition: .3s;
     transition: .3s;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 60%);
 }
@@ -396,7 +451,7 @@ opacity: 1s both;
 /****** Fonctionnement ******/
 
 #fonctionnement {
-    padding: 25px 0;
+    padding: 0;
     width: 100%;
     background: white;
     display: flex;
@@ -482,7 +537,7 @@ opacity: 1s both;
 }
 
 .card-image img {
-    width: 100%;
+    width: 101%;
     position: absolute;
     top: 52%;
     left: 50%;
@@ -568,10 +623,17 @@ opacity: 1s both;
     font-size: 18px;
 }
 
+.btn-menu:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0px 0px 10px 0px #00000099
+}
+
 /******* commander *******/
 
 .btn-cmd {
-    padding: 9% 0%;
+    padding: 5% 0%;
 }
 
 
@@ -616,10 +678,53 @@ footer p {
     margin-bottom: auto;
 }
 
-#colonne-1 {
-    oui
-}
 
-#colonne-2 {
-    oui
+
+@media only screen and (min-width : 1024px) {
+    main {
+        width: 100%;
+        display: block;
+    }
+
+    .fonctionnement-cont {
+        width: 100%;
+        flex-direction: unset;
+    }
+
+    .fonctionnement-cont h1 {
+        margin-right: 80px;
+    }
+
+    .tuto {
+        width: 100%;
+    }
+
+    .card {
+       width: 20%;
+       height: 290px; 
+    }
+
+    .card-image {
+        height: 228px;
+    }
+
+    .card-list {
+        display: flex;
+
+    }
+
+    .footer-body {
+        padding: 0% 2% 1% 4%;
+        display: flex;
+    }
+
+    .footer-body .footer-logo {
+        font-size: 2em;
+    }
+
+    .footer a {
+        padding-top: 13px;
+        margin-right: 370px
+    }
+    
 }
