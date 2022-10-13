@@ -221,7 +221,7 @@ header .arrow {
     height: 100%;
 }
 
-#main-menu {
+.main-menu {
     margin-top: -4rem;
     border-radius: 2rem 2rem 0 0;
     background-color: #f6f6f6;
@@ -320,7 +320,7 @@ header .arrow {
     bottom: 0;
 }
 
-#menu {
+.menu {
     background-color: #f6f6f6;
     padding: 0% 4%;
     display: grid;
@@ -512,8 +512,7 @@ header .arrow {
 }
 
 #resto h1 {
-    text-align: start;
-    margin-left: 15px;
+    text-align: center;
     padding-top: 40px;
 }
 
@@ -766,7 +765,7 @@ footer p {
         width: 25%;
     }
 
-    #menu {
+    .menu {
         grid-gap: 15px;
         display: flex;
         justify-content: space-around;
